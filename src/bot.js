@@ -220,11 +220,11 @@ class Bot {
         continue
       }
       // remove orders outside range
-      if (order.amount > 0 && (order.price > expectedBid || order.at < this.bestBid)) {
+      if (order.amount > 0 && order.price > expectedBid && order.at > this.bestBid) {
         this.cancelOrder(id)
         continue
       }
-      if (order.amount < 0 && (order.price < expectedAsk || order.at > this.bestAsk)) {
+      if (order.amount < 0 && order.price < expectedAsk && order.at < this.bestAsk) {
         this.cancelOrder(id)
       }
     }
