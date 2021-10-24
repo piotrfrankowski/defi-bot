@@ -1,2 +1,2 @@
-# defi-bot
-DeFi trading bot
+# DeFi bot
+

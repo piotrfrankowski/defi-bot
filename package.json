@@ -1,0 +1,15 @@
+{
+  "name": "diversifi-nodejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bootstrap.js",
+  "scripts": {
+    "start": "node src/bootstrap.js",
+    "test": "ENV=test jest"
+  },
+  "author": "DeversiFi",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
